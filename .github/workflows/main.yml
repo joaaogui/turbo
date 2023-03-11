@@ -37,7 +37,7 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: "joaoguilherme.surge.sh"
-          project: "../../apps/IMDb-best_season/dist/"
+          project: "../../apps/IMDb-best_season/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
       - name: Deploy to surge.sh
@@ -58,6 +58,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: "joaoguilherme4.surge.sh"
-          project: "../../apps/IMDb-best_season/youtube/dist/"
+          project: "../../apps/youtube/dist/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
