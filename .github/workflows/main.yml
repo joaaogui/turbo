@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
 
       - uses: pnpm/action-setup@v2.0.1
         with:
@@ -26,13 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install
+        run: yarn install
 
       - name: Build
-        run: pnpm build
+        run: echo "$PWD"
+        run: yarn build
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
