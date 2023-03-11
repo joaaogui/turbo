@@ -27,9 +27,10 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+      - name: console log
+        run: echo "$PWD"
 
       - name: Build
-        run: echo "$PWD"
         run: yarn build
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1
