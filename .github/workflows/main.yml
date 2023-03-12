@@ -30,6 +30,8 @@ jobs:
       - name: console log
         run: echo "$PWD"
       - name: console log
+        run: ls ./apps/
+      - name: console log
         run: ls ./apps/youtube/
 
       - name: Build
