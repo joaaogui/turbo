@@ -1,0 +1,21 @@
+{
+  "name": "jme",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "postcss": "8",
+    "postcss-import": "^15.1.0",
+    "sass": "^1.58.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vite": "^4.1.0"
+  }
+}

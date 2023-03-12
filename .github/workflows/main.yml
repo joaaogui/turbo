@@ -45,7 +45,7 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: "joaoguilherme2.surge.sh"
-          project: "./apps/j.me/dist/"
+          project: "./apps/jme/dist/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
       - name: Deploy to surge.sh
