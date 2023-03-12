@@ -33,6 +33,8 @@ jobs:
         run: ls ./apps/
       - name: console log
         run: ls ./apps/youtube/
+      - name: console log
+        run: ls ./apps/spotify/
 
       - name: Build
         run: yarn build
