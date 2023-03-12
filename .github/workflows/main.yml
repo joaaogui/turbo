@@ -29,6 +29,8 @@ jobs:
         run: yarn install
       - name: console log
         run: echo "$PWD"
+      - name: console log
+        run: ls .
 
       - name: Build
         run: yarn build
