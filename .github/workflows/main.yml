@@ -32,7 +32,7 @@ jobs:
       - name: console log
         run: ls ./apps/
       - name: console log
-        run: ls ./apps/youtube/
+        run: ls ./apps/youtubeapp/
       - name: console log
         run: ls ./apps/spotify/
 
@@ -63,6 +63,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: "joaoguilherme4.surge.sh"
-          project: "./apps/youtube/dist/"
+          project: "./apps/youtubeapp/dist/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
