@@ -41,24 +41,28 @@ jobs:
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
+          domain: "imdb.joaog.com"
           project: "./apps/imdb/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
+          domain: "me.joaog.com"
           project: "./apps/jme/dist/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
+          domain: "spotify.joaog.com"
           project: "./apps/spotify/dist/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
       - name: Deploy to surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
+          domain: "youtube.joaog.com"
           project: "./apps/youtube/dist/"
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
